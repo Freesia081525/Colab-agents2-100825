@@ -315,4 +315,7 @@ with gr.Blocks(title="Agent-based Visualization (Colab + Gemini)") as demo:
         outputs=[plot, details],
     )
 
-demo.launch(share=True)
+#demo.launch(share=True)
+# The server_name="0.0.0.0" makes it accessible within the Render network.
+# The server_port=7860 is a common port, but Render will map it to a public URL.
+demo.launch(server_name="0.0.0.0", server_port=7860)
