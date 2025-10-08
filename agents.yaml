@@ -214,3 +214,219 @@ agents:
       type: hist
       x: DeviceID
       hue: BrandName
+  - name: 各品牌裝置數量
+    description: 顯示依品牌分組的裝置總數
+    visualization:
+      type: bar
+      x: BrandName
+      y: DeviceCount
+      aggregate: sum
+
+  - name: 裝置狀態分佈
+    description: 裝置狀態類別的圓餅圖
+    visualization:
+      type: pie
+      x: DeviceStatus
+
+  - name: 各公司裝置數量
+    description: 顯示每家公司註冊的裝置數量
+    visualization:
+      type: bar
+      x: CompanyName
+      y: DeviceCount
+      aggregate: sum
+
+  - name: 商業流通狀態分佈
+    description: 商業流通狀態的圓餅圖
+    visualization:
+      type: pie
+      x: CommercialDistributionStatus
+
+  - name: 各版本型號裝置數量
+    description: 依版本型號分組的裝置數量
+    visualization:
+      type: bar
+      x: VersionModelNumber
+      y: DeviceCount
+      aggregate: sum
+
+  - name: 裝置ID直方圖
+    description: 裝置ID 的數值分佈直方圖
+    visualization:
+      type: hist
+      x: DeviceID
+
+  - name: 品牌與裝置ID散佈圖
+    description: 顯示裝置ID 與裝置數量的品牌散佈圖
+    visualization:
+      type: scatter
+      x: DeviceID
+      y: DeviceCount
+      hue: BrandName
+
+  - name: 公司與裝置ID散佈圖
+    description: 顯示裝置ID 與裝置數量的公司散佈圖
+    visualization:
+      type: scatter
+      x: DeviceID
+      y: DeviceCount
+      hue: CompanyName
+
+  - name: 各狀態裝置數量
+    description: 依裝置狀態分組的裝置數量長條圖
+    visualization:
+      type: bar
+      x: DeviceStatus
+      y: DeviceCount
+      aggregate: sum
+
+  - name: 各流通狀態裝置數量
+    description: 依流通狀態分組的裝置數量長條圖
+    visualization:
+      type: bar
+      x: CommercialDistributionStatus
+      y: DeviceCount
+      aggregate: sum
+
+  - name: 品牌與狀態
+    description: 依品牌與裝置狀態分組的長條圖
+    visualization:
+      type: bar
+      x: BrandName
+      y: DeviceCount
+      hue: DeviceStatus
+      aggregate: sum
+
+  - name: 公司與狀態
+    description: 依公司與裝置狀態分組的長條圖
+    visualization:
+      type: bar
+      x: CompanyName
+      y: DeviceCount
+      hue: DeviceStatus
+      aggregate: sum
+
+  - name: 品牌與流通狀態
+    description: 依品牌與流通狀態分組的長條圖
+    visualization:
+      type: bar
+      x: BrandName
+      y: DeviceCount
+      hue: CommercialDistributionStatus
+      aggregate: sum
+
+  - name: 公司與流通狀態
+    description: 依公司與流通狀態分組的長條圖
+    visualization:
+      type: bar
+      x: CompanyName
+      y: DeviceCount
+      hue: CommercialDistributionStatus
+      aggregate: sum
+
+  - name: 裝置數量直方圖
+    description: 裝置數量的直方圖
+    visualization:
+      type: hist
+      x: DeviceCount
+
+  - name: 品牌頻率
+    description: 品牌出現頻率的圓餅圖
+    visualization:
+      type: pie
+      x: BrandName
+
+  - name: 公司頻率
+    description: 公司出現頻率的圓餅圖
+    visualization:
+      type: pie
+      x: CompanyName
+
+  - name: 版本型號頻率
+    description: 版本型號出現頻率的圓餅圖
+    visualization:
+      type: pie
+      x: VersionModelNumber
+
+  - name: 裝置ID與版本散佈圖
+    description: 裝置ID 與版本型號的散佈圖
+    visualization:
+      type: scatter
+      x: DeviceID
+      y: VersionModelNumber
+
+  - name: 裝置ID與品牌散佈圖
+    description: 裝置ID 與品牌的散佈圖
+    visualization:
+      type: scatter
+      x: DeviceID
+      y: BrandName
+
+  - name: 裝置ID與公司散佈圖
+    description: 裝置ID 與公司的散佈圖
+    visualization:
+      type: scatter
+      x: DeviceID
+      y: CompanyName
+
+  - name: 各品牌裝置數量直方圖
+    description: 依品牌分組的裝置數量直方圖
+    visualization:
+      type: hist
+      x: BrandName
+
+  - name: 各公司裝置數量直方圖
+    description: 依公司分組的裝置數量直方圖
+    visualization:
+      type: hist
+      x: CompanyName
+
+  - name: 各狀態裝置數量直方圖
+    description: 依狀態分組的裝置數量直方圖
+    visualization:
+      type: hist
+      x: DeviceStatus
+
+  - name: 各流通狀態裝置數量直方圖
+    description: 依流通狀態分組的裝置數量直方圖
+    visualization:
+      type: hist
+      x: CommercialDistributionStatus
+
+  - name: 品牌與公司散佈圖
+    description: 品牌與公司的散佈圖
+    visualization:
+      type: scatter
+      x: BrandName
+      y: CompanyName
+
+  - name: 品牌與版本散佈圖
+    description: 品牌與版本型號的散佈圖
+    visualization:
+      type: scatter
+      x: BrandName
+      y: VersionModelNumber
+
+  - name: 公司與版本散佈圖
+    description: 公司與版本型號的散佈圖
+    visualization:
+      type: scatter
+      x: CompanyName
+      y: VersionModelNumber
+
+  - name: 狀態與流通狀態
+    description: 裝置狀態與流通狀態的長條圖
+    visualization:
+      type: bar
+      x: DeviceStatus
+      y: DeviceCount
+      hue: CommercialDistributionStatus
+      aggregate: sum
+
+  - name: 品牌與裝置ID直方圖
+    description: 依品牌分組的裝置ID直方圖
+    visualization:
+      type: hist
+      x: DeviceID
+      hue: BrandName
+
